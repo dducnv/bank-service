@@ -26,5 +26,11 @@ namespace bank_client.Controllers
 
             return View();
         }
+        public ActionResult Blog()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }
