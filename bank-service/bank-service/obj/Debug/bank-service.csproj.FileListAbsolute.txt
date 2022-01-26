@@ -5,3 +5,17 @@ C:\BaiNhom\bank-service\bank-service\bank-service\obj\Debug\bank-service.csproj.
 C:\BaiNhom\bank-service\bank-service\bank-service\obj\Debug\bank-service.csproj.CoreCompileInputs.cache
 C:\BaiNhom\bank-service\bank-service\bank-service\obj\Debug\bank-service.dll
 C:\BaiNhom\bank-service\bank-service\bank-service\obj\Debug\bank-service.pdb
+E:\BaiTapNhom\bank-service\bank-service\bank-service\bin\bank-service.dll.config
+E:\BaiTapNhom\bank-service\bank-service\bank-service\bin\bank-service.dll
+E:\BaiTapNhom\bank-service\bank-service\bank-service\bin\bank-service.pdb
+E:\BaiTapNhom\bank-service\bank-service\bank-service\bin\EntityFramework.dll
+E:\BaiTapNhom\bank-service\bank-service\bank-service\bin\EntityFramework.SqlServer.dll
+E:\BaiTapNhom\bank-service\bank-service\bank-service\bin\EntityFramework.xml
+E:\BaiTapNhom\bank-service\bank-service\bank-service\bin\EntityFramework.SqlServer.xml
+E:\BaiTapNhom\bank-service\bank-service\bank-service\obj\Debug\bank-service.csproj.AssemblyReference.cache
+E:\BaiTapNhom\bank-service\bank-service\bank-service\obj\Debug\bank-service.csproj.CoreCompileInputs.cache
+E:\BaiTapNhom\bank-service\bank-service\bank-service\obj\Debug\bank-service.csproj.CopyComplete
+E:\BaiTapNhom\bank-service\bank-service\bank-service\obj\Debug\bank-service.dll
+E:\BaiTapNhom\bank-service\bank-service\bank-service\obj\Debug\bank-service.pdb
+E:\BaiTapNhom\bank-service\bank-service\bank-service\obj\Debug\bank_service.Migrations.InitDatabase.resources
+E:\BaiTapNhom\bank-service\bank-service\bank-service\obj\Debug\bank-service.csproj.GenerateResource.cache

@@ -77,6 +77,11 @@
     <Compile Include="Dto\TransactionHistoryDto.cs" />
     <Compile Include="Entity\Account.cs" />
     <Compile Include="Entity\TransactionHistory.cs" />
+    <Compile Include="Migrations\202201261413336_InitDatabase.cs" />
+    <Compile Include="Migrations\202201261413336_InitDatabase.Designer.cs">
+      <DependentUpon>202201261413336_InitDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
@@ -94,6 +99,11 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202201261413336_InitDatabase.resx">
+      <DependentUpon>202201261413336_InitDatabase.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

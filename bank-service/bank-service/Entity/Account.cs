@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,6 +8,7 @@ namespace bank_service.Entity
 {
     public class Account
     {
+        [Key]
         public int AccountNumber { get; set; }
         public string FistName { get; set; }
         public string LastName { get; set; }
