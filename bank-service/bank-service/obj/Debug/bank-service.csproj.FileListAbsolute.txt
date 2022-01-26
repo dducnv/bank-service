@@ -1,0 +1,7 @@
+C:\BaiNhom\bank-service\bank-service\bank-service\bin\bank-service.dll.config
+C:\BaiNhom\bank-service\bank-service\bank-service\bin\bank-service.dll
+C:\BaiNhom\bank-service\bank-service\bank-service\bin\bank-service.pdb
+C:\BaiNhom\bank-service\bank-service\bank-service\obj\Debug\bank-service.csproj.AssemblyReference.cache
+C:\BaiNhom\bank-service\bank-service\bank-service\obj\Debug\bank-service.csproj.CoreCompileInputs.cache
+C:\BaiNhom\bank-service\bank-service\bank-service\obj\Debug\bank-service.dll
+C:\BaiNhom\bank-service\bank-service\bank-service\obj\Debug\bank-service.pdb
