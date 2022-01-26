@@ -32,14 +32,23 @@ namespace bank_service.Dto
         [Required(ErrorMessage = "Vui Lòng Nhập Số Tài Khoản Người Nhận")]
         public string RecevierAccountNumber { get; set; }
         [DataMember]
+        [DisplayName("Lời Nhắn")]
+        [Required(ErrorMessage = "Vui Lòng Nhập Số Tài Khoản Người Nhận")]
         public string Message { get; set; }
         [DataMember]
+        [DisplayName("Loại Giao Dịch")]
+        [Required]
         public string TransactionType { get; set; }
         [DataMember]
-        public DateTime CreactAt { get; set; }
+        [DisplayName("Ngày Gửi")]
+        [Required]
+        public DateTime CreatedAt { get; set; }
         [DataMember]
-        public DateTime UpdateAt { get; set; }
+        [Required]
+        public DateTime UpdatedAt { get; set; }
         [DataMember]
+        [DisplayName("Trạng Thái")]
+        [Required]
         public int Status { get; set; }
     }
 }
