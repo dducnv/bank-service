@@ -26,7 +26,29 @@ namespace bank_client.Controllers
 
             return View();
         }
+        // Chưa có gì
         public ActionResult Blog()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        // Lịch Sử Giao Dịch
+        public ActionResult Transactionhistory()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        // Chuyển Tiền
+        public ActionResult Transfers()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        //Thanh toán và nạp tiền
+        public ActionResult Payment()
         {
             ViewBag.Message = "Your contact page.";
 

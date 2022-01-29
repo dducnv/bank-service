@@ -1,0 +1,99 @@
+﻿@{
+    ViewBag.Title = "Payment";
+}
+
+<div class="slim-mainpanel">
+    <div class="container">
+        <div class="manager-header">
+            <div class="slim-pageheader">
+                <ol class="breadcrumb slim-breadcrumb">
+                    <li class="breadcrumb-item active"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Chuyển Tiền</a></li>
+                </ol>
+                <h6 class="slim-pagetitle">Chuyển Tiền Nhanh 24/7</h6>
+            </div><!-- slim-pageheader -->
+            <a id="managerNavicon" href="" class="contact-navicon"><i class="icon ion-navicon-round"></i></a>
+        </div><!-- manager-header -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="section-wrapper">
+                    <label class="section-label-sm tx-gray-500">Thông Tin Tài Khoản</label>
+                    <p class="invoice-info-row">
+                        <span>Tên Tài Khoản</span>
+                        <span>NGUYEN HONG QUANG</span>
+                    </p>
+                    <p class="invoice-info-row">
+                        <span>SỐ TK</span>
+                        <span>666688889999</span>
+                    </p>
+                    <p class="invoice-info-row">
+                        <span>Issue Date:</span>
+                        <span>February 1, 2022</span>
+                    </p>
+                    <p class="invoice-info-row">
+                        <span>Due Date:</span>
+                        <span>February 5, 2022</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="section-wrapper">
+                    <form action="form-validation.html" data-parsley-validate>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group ">
+                                    <label>Chọn Dịch Vụ: <span class="tx-danger">*</span></label>
+                                    <select class="form-control select2" data-placeholder="Choose one (with optgroup)">
+                                        <option label="Chọn Thanh Toán"></option>
+                                        <optgroup label="Các Dịch Vụ">
+                                            <option value="CA">
+                                                Nạp Điện Thoại
+                                            </option>
+                                            <option value="NV">
+                                                Điện
+                                            </option>
+                                            <option value="OR">
+                                                Nước
+                                            </option>
+                                            <option value="OR">
+                                                Mạng INTERNET
+                                            </option>
+                                            <option value="OR">
+                                                Vé Máy Bay
+                                            </option>
+                                        </optgroup>
+                                    </select>
+                                </div><!-- form-group -->
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>SỐ TÀI KHOẢN: <span class="tx-danger">*</span></label>
+                                    <input type="text" name="firstname" class="form-control" placeholder="NHẬP SỐ TÀI KHOẢN" required>
+                                </div><!-- form-group -->
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>TÊN NGƯỜI NHẬN: <span class="tx-danger">*</span></label>
+                                    <input type="text" name="name" class="form-control" placeholder="NHẬP TÊN NGƯỜI NHẬN" required>
+                                </div><!-- form-group -->
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group ">
+                                    <label>LỜI NHẮN: <span class="tx-danger">*</span></label>
+                                    <input type="text" name="lastname" class="form-control" placeholder="LỜI NHẮN" required>
+                                </div><!-- form-group -->
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group ">
+                                    <label>MÃ PIN OTP: <span class="tx-danger">*</span></label>
+                                    <input type="text" name="number" class="form-control wd-250" placeholder="Mã PIN OTP" required>
+                                </div><!-- form-group -->
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary pd-x-20">CHUYỂN TIỀN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div><!-- container -->
+</div><!-- slim-mainpanel -->

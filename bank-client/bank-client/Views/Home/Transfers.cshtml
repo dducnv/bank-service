@@ -1,0 +1,193 @@
+﻿
+@{
+    ViewBag.Title = "Transfers";
+}
+<div class="slim-mainpanel">
+    <div class="container">
+        <div class="manager-header">
+            <div class="slim-pageheader">
+                <ol class="breadcrumb slim-breadcrumb">
+                    <li class="breadcrumb-item active"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Chuyển Tiền</a></li>
+                </ol>
+                <h6 class="slim-pagetitle">Chuyển Tiền Nhanh 24/7</h6>
+            </div><!-- slim-pageheader -->
+            <a id="managerNavicon" href="" class="contact-navicon"><i class="icon ion-navicon-round"></i></a>
+        </div><!-- manager-header -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="section-wrapper">
+                    <label class="section-label-sm tx-gray-500">Thông Tin Tài Khoản</label>
+                    <p class="invoice-info-row">
+                        <span>Tên Tài Khoản</span>
+                        <span>NGUYEN HONG QUANG</span>
+                    </p>
+                    <p class="invoice-info-row">
+                        <span>SỐ TK</span>
+                        <span>666688889999</span>
+                    </p>
+                    <p class="invoice-info-row">
+                        <span>Issue Date:</span>
+                        <span>February 1, 2022</span>
+                    </p>
+                    <p class="invoice-info-row">
+                        <span>Due Date:</span>
+                        <span>February 5, 2022</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="section-wrapper">
+                    <form action="form-validation.html" data-parsley-validate>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group ">
+                                    <label>Chọn Ngân Hàng: <span class="tx-danger">*</span></label>
+                                    <select class="form-control select2" data-placeholder="Choose one (with optgroup)">
+                                        <option label="Chọn Ngân Hàng Muốn Chuyển"></option>
+                                        <optgroup label="Các Ngân Hàng">
+                                            <option value="CA">Ngân hàng TMCP Bản Việt</option>
+                                            <option value="NV">
+                                                Ngân hàng TMCP Đại A
+                                            </option>
+                                            <option value="OR">
+                                                Ngân hàng TMCP Phát triển MeKong
+                                            </option>
+                                            <option value="WA">
+                                                Ngân hàng TMCP Quốc Dân
+                                            </option>
+                                            <option value="AR">
+                                                Ngân hàng TMCP Việt Á
+                                            </option>
+                                            <option value="CO">
+                                                Ngân hàng TMCP Việt Nam Thương Tín
+                                            </option>
+                                            <option value="ID">
+                                                Ngân hàng TMCP Xây dựng VN
+                                            </option>
+                                            <option value="MO">
+                                                NH BẢO VIỆT (Bao Viet Bank)
+                                            </option>
+                                            <option value="AL">
+                                                NH Tiên Phong (Tiên Phong Bank)
+                                            </option>
+                                            <option value="KA">
+                                                NH TMCP BƯU ĐIỆN LIÊN VIỆT
+                                            </option>
+                                            <option value="KE">
+                                                NHTMCP Á Châu (ACB)
+                                            </option>
+                                            <option value="OK">
+                                                NHTMCP An Bình (ABBank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Bắc Á (Bac A bank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Đại Dương (Oceanbank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Dầu khí Toàn cầu (GPBank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Đông Á (Dong A bank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Đông Nam Á (Seabank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Hàng Hải (Maritime Bank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Kiên Long (Kien Long bank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Kỹ thương VN (Techcombank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Nam Á (Nam A Bank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP phát triển Tp HCM (HD Bank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Phương Đông (OCB)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Phương Nam (Southern Bank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Quân Đội (MB)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Quốc Tế (VIB)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Sài Gòn (SCB)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Sài gòn – Hà Nội (SHB)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Sài gòn Thương Tín (Sacombank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP SG Công Thương (SaigonBank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Việt Hóa (Viet hoa JS bank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP VN Thịnh Vượng (VP Bank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Xăng dầu Petrolimex (PGBank)
+                                            </option>
+                                            <option value="CA">
+                                                NHTMCP Xuất Nhập Khẩu (Eximbank)
+                                            </option>
+                                            <option value="CA">
+                                                PV com bank_NH Đại Chúng (P.Tay+TCDK)
+                                            </option>
+                                        </optgroup>
+                                    </select>
+                                </div><!-- form-group -->
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>SỐ TÀI KHOẢN: <span class="tx-danger">*</span></label>
+                                    <input type="text" name="firstname" class="form-control" placeholder="NHẬP SỐ TÀI KHOẢN" required>
+                                </div><!-- form-group -->
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>TÊN NGƯỜI NHẬN: <span class="tx-danger">*</span></label>
+                                    <input type="text" name="name" class="form-control" placeholder="NHẬP TÊN NGƯỜI NHẬN" required>
+                                </div><!-- form-group -->
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group ">
+                                    <label>NHẬP TIỀN: <span class="tx-danger">*</span></label>
+                                    <input type="text" name="amount" class="form-control" placeholder="NHẬP TIỀN" required>
+                                </div><!-- form-group -->
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group ">
+                                    <label>LỜI NHẮN: <span class="tx-danger">*</span></label>
+                                    <input type="text" name="lastname" class="form-control" placeholder="LỜI NHẮN" required>
+                                </div><!-- form-group -->
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group ">
+                                    <label>MÃ PIN OTP: <span class="tx-danger">*</span></label>
+                                    <input type="text" name="number" class="form-control wd-250" placeholder="Mã PIN OTP" required>
+                                </div><!-- form-group -->
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary pd-x-20">CHUYỂN TIỀN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div><!-- container -->
+</div><!-- slim-mainpanel -->

@@ -2,28 +2,16 @@
     <div class="container">
         <ul class="nav">
             <li class="nav-item active">
-                <a class="nav-link" href="widgets.html">
-                    <i class="icon ion-ios-analytics-outline"></i>
-                    <span>Trang Chủ</span>
-                </a>
+                @Html.ActionLink("Trang Chủ", "Index", "Home",new {@class= "nav-link" })            
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="widgets.html">
-                    <i class="icon ion-ios-analytics-outline"></i>
-                    <span>Chuyển Tiền</span>
-                </a>
+                @Html.ActionLink("Chuyển Tiền", "Transfers", "Home", new { @class = "nav-link" })
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="widgets.html">
-                    <i class="icon ion-ios-analytics-outline"></i>
-                    <span>Lịch Sử Giao Dịch</span>
-                </a>
+                @Html.ActionLink("Lịch Sử", "Transactionhistory", "Home", new { @class = "nav-link" })
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="widgets.html">
-                    <i class="icon ion-ios-analytics-outline"></i>
-                    <span>Nạp Tiền</span>
-                </a>
+                @Html.ActionLink("Thanh Toán và Nạp Tiền", "Payment", "Home", new { @class = "nav-link" })
             </li>
         </ul>
     </div><!-- container -->
