@@ -5,13 +5,15 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
-namespace StudentManage.Data
+namespace bank_service.Data
 {
     public class MyDBContext : DbContext
     {
-        public MyDBContext():base("name=EcommerceContext")
+        public MyDBContext():base("name=BankServiceContext")
         {
 
         }
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<TransactionHistory> TransactionHistories { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,6 +8,7 @@ namespace bank_service.Entity
 {
     public class TransactionHistory
     {
+        [Key]
         public string TransactionId { get; set; }
         public string SenderName { get; set; }
         public double Amount { get; set; }
