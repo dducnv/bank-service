@@ -12,9 +12,7 @@ namespace bank_service.Dto
     public class AccountDto
     {
         [DataMember]
-        [DisplayName("Số Tài Khoản")]
-        [Required]
-        public int AccountNumber { get; set; }
+        public string AccountNumber { get; set; }
         [DataMember]
         [DisplayName("Tên")]
         [Required(ErrorMessage = "Vui Lòng Nhập Tên")]
@@ -32,6 +30,7 @@ namespace bank_service.Dto
         [Required(ErrorMessage = "Vui Lòng Nhập Lại Mật Khẩu")]
         [Compare("Password", ErrorMessage = "Mật Khẩu Không Trùng Khớp.")]
         public string PasswordConfirm { get; set; }
+        [DataMember]
         [DisplayName("Số Điện Thoại")]
         [Required(ErrorMessage = "Vui Lòng Nhập Số Điện Thoại")]
         [RegularExpression(@"(84|0[3|5|7|8|9])+([0-9]{8})\b", ErrorMessage = "Số Điện Thoại Không Hợp Lệ.")]
@@ -49,18 +48,17 @@ namespace bank_service.Dto
         [Required(ErrorMessage = "Vui Lòng Nhập Số Giấy Tờ Tuỳ Thân")]
         public string IndetityNumber { get; set; }
         [DataMember]
-        [DisplayName("Số Dư")]
-        [Required]
-        public double Balance { get; set; }
-        [DataMember]
         [DisplayName("Ngày Sinh")]
         [Required(ErrorMessage = "Vui Lòng Nhập Ngày Sinh")]
         public DateTime Birthday { get; set; }
+        [DataMember]
+        public double Balance { get; set; }
         [DataMember]
         public DateTime CreatedAt { get; set; }
         [DataMember]
         public DateTime UpdatedAt { get; set; }
         [DataMember]
         public int Status { get; set; }
+
     }
 }

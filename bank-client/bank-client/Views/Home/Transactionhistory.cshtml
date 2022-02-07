@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<bank_client.ServiceReference1.TransactionHistory>
 @{
     ViewBag.Title = "Transactionhistory";
 }
@@ -14,131 +14,49 @@
         <div class="container">
             <div class="section-wrapper mg-t-20">
                 <label class="section-title">Lịch Sử Giao Dịch</label>
-                <p class="mg-b-20 mg-sm-b-40">Thông tin Lịch Sử.</p>
-
                 <div class="table-responsive">
                     <table class="table table-bordered mg-b-0">
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>Giờ/Ngày</th>
-                                <th>Tên Tài Khoản</th>
-                                <th>STK</th>
-                                <th>Ngân Hàng</th>
-                                <th>Người Nhận</th>
-                                <th>STK Người Nhận</th>
-                                <th>Ngân Hàng</th>
-                                <th>Số Tiền Gửi</th>
-                                <th>Lời Nhắn</th>
-                                <th>Mã Giao dịch</th>
+                                <th>@Html.DisplayNameFor(m => m.TransactionId)</th>
+                                <th>@Html.DisplayNameFor(m => m.SenderName)</th>
+                                <th>@Html.DisplayNameFor(m => m.RecevierName)</th>
+                                <th>@Html.DisplayNameFor(m => m.SenderAccountNumber)</th>
+                                <th>@Html.DisplayNameFor(m => m.RecevierAccountNumber)</th>
+                                <th>@Html.DisplayNameFor(m => m.Amount)</th>
+                                <th>@Html.DisplayNameFor(m => m.TransactionType)</th>
+                                <th>@Html.DisplayNameFor(m => m.Message)</th>
+                                <th>@Html.DisplayNameFor(m => m.CreatedAt)</th>
+
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>22:22 26/1/2022</td>
-                                <td>NGUYEN HONG QUANG</td>
-                                <td>888866669999</td>
-                                <td>TECKCOMBANK</td>
-                                <td>NGUYEN VAN DUC</td>
-                                <td>333366669999</td>
-                                <td>BMBANK</td>
-                                <td>+ 5.000.000 VND</td>
-                                <td>THUONG TET 2022 CHO DUC</td>
-                                <td>B2BJDMDKWD52D333</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>22:22 26/1/2022</td>
-                                <td>NGUYEN HONG QUANG</td>
-                                <td>888866669999</td>
-                                <td>TECKCOMBANK</td>
-                                <td>NGUYEN VAN DUC</td>
-                                <td>333366669999</td>
-                                <td>BMBANK</td>
-                                <td>- 5.000.000 VND</td>
-                                <td>THUONG TET 2022 CHO DUC</td>
-                                <td>B2BJDMDKWD52D333</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>22:22 26/1/2022</td>
-                                <td>NGUYEN HONG QUANG</td>
-                                <td>888866669999</td>
-                                <td>TECKCOMBANK</td>
-                                <td>NGUYEN VAN DUC</td>
-                                <td>333366669999</td>
-                                <td>BMBANK</td>
-                                <td>- 5.000.000 VND</td>
-                                <td>THUONG TET 2022 CHO DUC</td>
-                                <td>B2BJDMDKWD52D333</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>22:22 26/1/2022</td>
-                                <td>NGUYEN HONG QUANG</td>
-                                <td>888866669999</td>
-                                <td>TECKCOMBANK</td>
-                                <td>NGUYEN VAN DUC</td>
-                                <td>333366669999</td>
-                                <td>BMBANK</td>
-                                <td>+ 5.000.000 VND</td>
-                                <td>THUONG TET 2022 CHO DUC</td>
-                                <td>B2BJDMDKWD52D333</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>22:22 26/1/2022</td>
-                                <td>NGUYEN HONG QUANG</td>
-                                <td>888866669999</td>
-                                <td>TECKCOMBANK</td>
-                                <td>NGUYEN VAN DUC</td>
-                                <td>333366669999</td>
-                                <td>BMBANK</td>
-                                <td>+ 5.000.000 VND</td>
-                                <td>THUONG TET 2022 CHO DUC</td>
-                                <td>B2BJDMDKWD52D333</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>22:22 26/1/2022</td>
-                                <td>NGUYEN HONG QUANG</td>
-                                <td>888866669999</td>
-                                <td>TECKCOMBANK</td>
-                                <td>NGUYEN VAN DUC</td>
-                                <td>333366669999</td>
-                                <td>BMBANK</td>
-                                <td>+ 5.000.000 VND</td>
-                                <td>THUONG TET 2022 CHO DUC</td>
-                                <td>B2BJDMDKWD52D333</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <td>22:22 26/1/2022</td>
-                                <td>NGUYEN HONG QUANG</td>
-                                <td>888866669999</td>
-                                <td>TECKCOMBANK</td>
-                                <td>NGUYEN VAN DUC</td>
-                                <td>333366669999</td>
-                                <td>BMBANK</td>
-                                <td>+ 5.000.000 VND</td>
-                                <td>THUONG TET 2022 CHO DUC</td>
-                                <td>B2BJDMDKWD52D333</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">8</th>
-                                <td>22:22 26/1/2022</td>
-                                <td>NGUYEN HONG QUANG</td>
-                                <td>888866669999</td>
-                                <td>TECKCOMBANK</td>
-                                <td>NGUYEN VAN DUC</td>
-                                <td>333366669999</td>
-                                <td>BMBANK</td>
-                                <td>+ 5.000.000 VND</td>
-                                <td>THUONG TET 2022 CHO DUC</td>
-                                <td>B2BJDMDKWD52D333</td>
-                            </tr>
-                        </tbody>
+                            @if (Model != null)
+                            {
+                                foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <th scope="row"># @Html.DisplayFor(m => item.TransactionId)</th>
+                                        <th>@Html.DisplayFor(m => item.SenderName)</th>
+                                        <th>@Html.DisplayFor(m => item.RecevierName)</th>
+                                        <th>@Html.DisplayFor(m => item.SenderAccountNumber)</th>
+                                        <th>@Html.DisplayFor(m => item.RecevierAccountNumber)</th>
+                                        <th>$@Html.DisplayFor(m => item.Amount)</th>
+                                        <th>@Html.DisplayFor(m => item.TransactionType)</th>
+                                        <th>@Html.DisplayFor(m => item.Message)</th>
+                                        <th>@Html.DisplayFor(m => item.CreatedAt)</th>
+                                    </tr>
+                                    }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <th colspan="9">Không có giao dịch nào gần đây.</th>
+                                </tr>
+                            }
+
+
+                            </tbody>
                     </table>
                 </div><!-- table-responsive -->
             </div><!-- section-wrapper -->

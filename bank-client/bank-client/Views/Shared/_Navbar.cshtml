@@ -1,18 +1,33 @@
-﻿<div class="slim-navbar">
+﻿@{ 
+    var userSecsion = (bank_client.ServiceReference1.AccountDto)Session[bank_client.Models.AccountStore.USER_SESSION];
+}
+<div class="slim-navbar">
     <div class="container">
         <ul class="nav">
-            <li class="nav-item active">
-                @Html.ActionLink("Trang Chủ", "Index", "Home",new {@class= "nav-link" })            
-            </li>
-            <li class="nav-item">
-                @Html.ActionLink("Chuyển Tiền", "Transfers", "Home", new { @class = "nav-link" })
-            </li>
-            <li class="nav-item">
-                @Html.ActionLink("Lịch Sử", "Transactionhistory", "Home", new { @class = "nav-link" })
-            </li>
-            <li class="nav-item">
-                @Html.ActionLink("Thanh Toán và Nạp Tiền", "Payment", "Home", new { @class = "nav-link" })
-            </li>
+            @if (userSecsion != null)
+            {
+                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                    @Html.ActionLink("Trang Chủ", "Index", "Home", new { @class = "nav-link" })
+                </li>
+                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "Transfers" ? "active" : "")">
+                    @Html.ActionLink("Chuyển Tiền", "Transfers", "Home", new { @class = "nav-link" })
+                </li>
+                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "Transactionhistory" ? "active" : "")">
+                    @Html.ActionLink("Lịch Sử", "Transactionhistory", "Home", new { @class = "nav-link" })
+                </li>
+                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "Payment" ? "active" : "")">
+                    @Html.ActionLink("Thanh Toán và Nạp Tiền", "Payment", "Home", new { @class = "nav-link" })
+                </li>
+            }
+            else
+            {
+                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "Login" ? "active" : "")">
+                    @Html.ActionLink("Đăng Nhập", "Login", "Account", new { @class = "nav-link" })
+                </li>
+                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "Register" ? "active" : "")">
+                    @Html.ActionLink("Đăng Ký", "Register", "Account", new { @class = "nav-link" })
+                </li>
+            }
         </ul>
     </div><!-- container -->
 </div><!-- slim-navbar -->

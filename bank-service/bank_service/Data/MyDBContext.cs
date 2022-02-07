@@ -14,7 +14,6 @@ namespace bank_service.Data
 
         }
         public DbSet<Account> Accounts { get; set; }
-        public DbSet<Balance> Balances { get; set; }
         public DbSet<TransactionHistory> TransactionHistories { get; set; }
     }
 }

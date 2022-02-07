@@ -1,21 +1,36 @@
-﻿@{
+﻿@model  bank_client.Models.Login
+@{
     ViewBag.Title = "Login";
 }
 
 <div class="signin-wrapper">
-    <div class="signin-box">
-        <h2 class="slim-logo"><a href="index.html">T2009M Bank<span>.</span></a></h2>
-        <h3 class="signin-title-secondary">Đăng nhập để tiếp tục.</h3>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="signin-box">
+            <h2 class="slim-logo"><a href="index.html">T2009M Bank<span>.</span></a></h2>
+            <h3 class="signin-title-secondary">Đăng nhập để tiếp tục.</h3>
 
-        <div class="form-group">
-            <label>Tên Đăng Nhập</label>
-            <input type="text" class="form-control" placeholder="Tên đăng nhập">
-        </div><!-- form-group -->
-        <div class="form-group mg-b-50">
-            <label>Mật Khẩu</label>
-            <input type="password" class="form-control" placeholder="Mật khẩu">
-        </div><!-- form-group -->
-        <button class="btn btn-primary btn-block btn-signin">Đăng Nhập</button>
-        <p class="mg-b-0">Bạn chưa có tài khoản ? <a href="page-signup.html">Đăng ký</a></p>
-    </div><!-- signin-box -->
-</div><!-- signin-wrapper -->
+            <div class="form-group">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PhoneNumber, htmlAttributes: new { @class = "control-label " })
+                    <div>
+                        @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div><!-- form-group -->
+            <div class="form-group mg-b-50">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label " })
+                    <div>
+                        @Html.PasswordFor(model => model.Password,  new { @class = "form-control" } )
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div><!-- form-group -->
+            <button class="btn btn-primary btn-block btn-signin">Đăng Nhập</button>
+            <p class="mg-b-0">Bạn chưa có tài khoản ? <a href="page-signup.html">Đăng ký</a></p>
+        </div><!-- signin-box -->
+    }
+    </div><!-- signin-wrapper -->

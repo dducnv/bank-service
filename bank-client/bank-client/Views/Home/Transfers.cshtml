@@ -1,6 +1,7 @@
-﻿
+﻿@model bank_client.Models.MultiModel
 @{
     ViewBag.Title = "Transfers";
+  
 }
 <div class="slim-mainpanel">
     <div class="container">
@@ -20,173 +21,87 @@
                     <label class="section-label-sm tx-gray-500">Thông Tin Tài Khoản</label>
                     <p class="invoice-info-row">
                         <span>Tên Tài Khoản</span>
-                        <span>NGUYEN HONG QUANG</span>
+                        <span>@Html.DisplayFor(m => m.accountDto.LastName) @Html.DisplayFor(m => m.accountDto.FistName)</span>
                     </p>
                     <p class="invoice-info-row">
                         <span>SỐ TK</span>
-                        <span>666688889999</span>
+                        <span>@Html.DisplayFor(m => m.accountDto.AccountNumber)</span>
                     </p>
                     <p class="invoice-info-row">
-                        <span>Issue Date:</span>
-                        <span>February 1, 2022</span>
-                    </p>
-                    <p class="invoice-info-row">
-                        <span>Due Date:</span>
-                        <span>February 5, 2022</span>
+                        <span>SỐ Du</span>
+                        <span>@Html.DisplayFor(m => m.accountDto.Balance)</span>
                     </p>
                 </div>
             </div>
             <div class="col-md-8">
                 <div class="section-wrapper">
-                    <form action="form-validation.html" data-parsley-validate>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group ">
-                                    <label>Chọn Ngân Hàng: <span class="tx-danger">*</span></label>
-                                    <select class="form-control select2" data-placeholder="Choose one (with optgroup)">
-                                        <option label="Chọn Ngân Hàng Muốn Chuyển"></option>
-                                        <optgroup label="Các Ngân Hàng">
-                                            <option value="CA">Ngân hàng TMCP Bản Việt</option>
-                                            <option value="NV">
-                                                Ngân hàng TMCP Đại A
-                                            </option>
-                                            <option value="OR">
-                                                Ngân hàng TMCP Phát triển MeKong
-                                            </option>
-                                            <option value="WA">
-                                                Ngân hàng TMCP Quốc Dân
-                                            </option>
-                                            <option value="AR">
-                                                Ngân hàng TMCP Việt Á
-                                            </option>
-                                            <option value="CO">
-                                                Ngân hàng TMCP Việt Nam Thương Tín
-                                            </option>
-                                            <option value="ID">
-                                                Ngân hàng TMCP Xây dựng VN
-                                            </option>
-                                            <option value="MO">
-                                                NH BẢO VIỆT (Bao Viet Bank)
-                                            </option>
-                                            <option value="AL">
-                                                NH Tiên Phong (Tiên Phong Bank)
-                                            </option>
-                                            <option value="KA">
-                                                NH TMCP BƯU ĐIỆN LIÊN VIỆT
-                                            </option>
-                                            <option value="KE">
-                                                NHTMCP Á Châu (ACB)
-                                            </option>
-                                            <option value="OK">
-                                                NHTMCP An Bình (ABBank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Bắc Á (Bac A bank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Đại Dương (Oceanbank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Dầu khí Toàn cầu (GPBank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Đông Á (Dong A bank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Đông Nam Á (Seabank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Hàng Hải (Maritime Bank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Kiên Long (Kien Long bank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Kỹ thương VN (Techcombank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Nam Á (Nam A Bank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP phát triển Tp HCM (HD Bank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Phương Đông (OCB)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Phương Nam (Southern Bank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Quân Đội (MB)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Quốc Tế (VIB)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Sài Gòn (SCB)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Sài gòn – Hà Nội (SHB)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Sài gòn Thương Tín (Sacombank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP SG Công Thương (SaigonBank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Việt Hóa (Viet hoa JS bank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP VN Thịnh Vượng (VP Bank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Xăng dầu Petrolimex (PGBank)
-                                            </option>
-                                            <option value="CA">
-                                                NHTMCP Xuất Nhập Khẩu (Eximbank)
-                                            </option>
-                                            <option value="CA">
-                                                PV com bank_NH Đại Chúng (P.Tay+TCDK)
-                                            </option>
-                                        </optgroup>
-                                    </select>
-                                </div><!-- form-group -->
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>SỐ TÀI KHOẢN: <span class="tx-danger">*</span></label>
-                                    <input type="text" name="firstname" class="form-control" placeholder="NHẬP SỐ TÀI KHOẢN" required>
-                                </div><!-- form-group -->
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>TÊN NGƯỜI NHẬN: <span class="tx-danger">*</span></label>
-                                    <input type="text" name="name" class="form-control" placeholder="NHẬP TÊN NGƯỜI NHẬN" required>
-                                </div><!-- form-group -->
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group ">
-                                    <label>NHẬP TIỀN: <span class="tx-danger">*</span></label>
-                                    <input type="text" name="amount" class="form-control" placeholder="NHẬP TIỀN" required>
-                                </div><!-- form-group -->
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group ">
-                                    <label>LỜI NHẮN: <span class="tx-danger">*</span></label>
-                                    <input type="text" name="lastname" class="form-control" placeholder="LỜI NHẮN" required>
-                                </div><!-- form-group -->
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group ">
-                                    <label>MÃ PIN OTP: <span class="tx-danger">*</span></label>
-                                    <input type="text" name="number" class="form-control wd-250" placeholder="Mã PIN OTP" required>
-                                </div><!-- form-group -->
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => Model.TransferDto.AccountNumberReceiver, htmlAttributes: new { @class = "control-label " })
+                                @Html.EditorFor(model => model.TransferDto.AccountNumberReceiver, new { htmlAttributes = new { @Name = "AccountNumberReceiver", @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.TransferDto.AccountNumberReceiver, "", new { @class = "text-danger" })
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary pd-x-20">CHUYỂN TIỀN</button>
-                    </form>
-                </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.TransferDto.FullName, htmlAttributes: new { @class = "control-label " })
+                                @Html.EditorFor(model => model.TransferDto.FullName, new { htmlAttributes = new { @Name = "FullName", @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.TransferDto.FullName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.TransferDto.Amount, htmlAttributes: new { @class = "control-label " })
+                                @Html.EditorFor(model => model.TransferDto.Amount, new { htmlAttributes = new { @Name = "Amount", @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.TransferDto.Amount, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.TransferDto.Message, htmlAttributes: new { @class = "control-label " })
+                                @Html.TextAreaFor(model => model.TransferDto.Message, new { @Name = "Message", @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.TransferDto.Message, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.TransferDto.Password, htmlAttributes: new { @class = "control-label " })
+                                @Html.PasswordFor(model => model.TransferDto.Password, new { @Name = "Password", @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.TransferDto.Password, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.Label("OTP CODE", htmlAttributes: new { @class = "control-label " })
+                                <input type="number" name="Otp" class="form-control" />
+                            </div>
+                            @Ajax.ActionLink(
+                                "Get OTP", // <-- Text to display
+                                "GetOTP",// <-- Action/Method Name
+                                  "Home",//<!-- Controller Name
+                                 new AjaxOptions
+                                 {
+                                     UpdateTargetId = "UpdateContentDiv", // <-- DOM element ID to update
+                                     InsertionMode = InsertionMode.Replace, // <-- Replace the content of DOM element
+                                     HttpMethod = "GET", // <-- HTTP method
+                                     LoadingElementId = "divLoading", //Id of Loading GIF Image
+                                     OnBegin = "onAjaxBegin", //OnBegin JS Function
+                                     OnComplete = "onAjaxComplete" //OnComplete JS Function
+                                 }//-- Class
+                                 )
+                            <div style="display:none" id="divLoading">
+                                loading
+                            </div>
+                        </div>
+                    </div>
+                        <button type="submit"  class="btn btn-primary pd-x-20">CHUYỂN TIỀN</button>
+                    }
+                    </div>
             </div>
         </div>
     </div><!-- container -->

@@ -184,9 +184,9 @@ E:\BaiTapNhom\bank-service\bank-client\bank-client\bin\Xamarin.Forms.Platform.WP
 E:\BaiTapNhom\bank-service\bank-client\bank-client\bin\Xamarin.Forms.Xaml.pdb
 E:\BaiTapNhom\bank-service\bank-client\bank-client\bin\Xamarin.Forms.Xaml.xml
 E:\BaiTapNhom\bank-service\bank-client\bank-client\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\BaiTapNhom\bank-service\bank-client\bank-client\obj\Debug\bank-client.csproj.AssemblyReference.cache
 E:\BaiTapNhom\bank-service\bank-client\bank-client\obj\Debug\bank-client.csproj.CoreCompileInputs.cache
 E:\BaiTapNhom\bank-service\bank-client\bank-client\obj\Debug\XamlC.stamp
 E:\BaiTapNhom\bank-service\bank-client\bank-client\obj\Debug\bank-client.csproj.CopyComplete
 E:\BaiTapNhom\bank-service\bank-client\bank-client\obj\Debug\bank-client.dll
 E:\BaiTapNhom\bank-service\bank-client\bank-client\obj\Debug\bank-client.pdb
+E:\BaiTapNhom\bank-service\bank-client\bank-client\obj\Debug\bank-client.csproj.AssemblyReference.cache

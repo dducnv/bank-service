@@ -15,18 +15,54 @@ namespace bank_client.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/bank_service")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="AccountDto", Namespace="http://schemas.datacontract.org/2004/07/bank_service.Dto")]
     [System.SerializableAttribute()]
-    public partial class CompositeType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class AccountDto : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool BoolValueField;
+        private string AccountNumberField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StringValueField;
+        private string AddressField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double BalanceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime BirthdayField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime CreatedAtField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FistNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IndetityNumberField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordConfirmField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PhoneNumberField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int StatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime UpdatedAtField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -39,27 +75,558 @@ namespace bank_client.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool BoolValue {
+        public string AccountNumber {
             get {
-                return this.BoolValueField;
+                return this.AccountNumberField;
             }
             set {
-                if ((this.BoolValueField.Equals(value) != true)) {
-                    this.BoolValueField = value;
-                    this.RaisePropertyChanged("BoolValue");
+                if ((object.ReferenceEquals(this.AccountNumberField, value) != true)) {
+                    this.AccountNumberField = value;
+                    this.RaisePropertyChanged("AccountNumber");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string StringValue {
+        public string Address {
             get {
-                return this.StringValueField;
+                return this.AddressField;
             }
             set {
-                if ((object.ReferenceEquals(this.StringValueField, value) != true)) {
-                    this.StringValueField = value;
-                    this.RaisePropertyChanged("StringValue");
+                if ((object.ReferenceEquals(this.AddressField, value) != true)) {
+                    this.AddressField = value;
+                    this.RaisePropertyChanged("Address");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Balance {
+            get {
+                return this.BalanceField;
+            }
+            set {
+                if ((this.BalanceField.Equals(value) != true)) {
+                    this.BalanceField = value;
+                    this.RaisePropertyChanged("Balance");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Birthday {
+            get {
+                return this.BirthdayField;
+            }
+            set {
+                if ((this.BirthdayField.Equals(value) != true)) {
+                    this.BirthdayField = value;
+                    this.RaisePropertyChanged("Birthday");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime CreatedAt {
+            get {
+                return this.CreatedAtField;
+            }
+            set {
+                if ((this.CreatedAtField.Equals(value) != true)) {
+                    this.CreatedAtField = value;
+                    this.RaisePropertyChanged("CreatedAt");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Email {
+            get {
+                return this.EmailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
+                    this.EmailField = value;
+                    this.RaisePropertyChanged("Email");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FistName {
+            get {
+                return this.FistNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FistNameField, value) != true)) {
+                    this.FistNameField = value;
+                    this.RaisePropertyChanged("FistName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IndetityNumber {
+            get {
+                return this.IndetityNumberField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IndetityNumberField, value) != true)) {
+                    this.IndetityNumberField = value;
+                    this.RaisePropertyChanged("IndetityNumber");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LastName {
+            get {
+                return this.LastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LastNameField, value) != true)) {
+                    this.LastNameField = value;
+                    this.RaisePropertyChanged("LastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Password {
+            get {
+                return this.PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PasswordConfirm {
+            get {
+                return this.PasswordConfirmField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordConfirmField, value) != true)) {
+                    this.PasswordConfirmField = value;
+                    this.RaisePropertyChanged("PasswordConfirm");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PhoneNumber {
+            get {
+                return this.PhoneNumberField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PhoneNumberField, value) != true)) {
+                    this.PhoneNumberField = value;
+                    this.RaisePropertyChanged("PhoneNumber");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Status {
+            get {
+                return this.StatusField;
+            }
+            set {
+                if ((this.StatusField.Equals(value) != true)) {
+                    this.StatusField = value;
+                    this.RaisePropertyChanged("Status");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime UpdatedAt {
+            get {
+                return this.UpdatedAtField;
+            }
+            set {
+                if ((this.UpdatedAtField.Equals(value) != true)) {
+                    this.UpdatedAtField = value;
+                    this.RaisePropertyChanged("UpdatedAt");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="LoginDto", Namespace="http://schemas.datacontract.org/2004/07/bank_service.Dto")]
+    [System.SerializableAttribute()]
+    public partial class LoginDto : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PhoneNumberField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Password {
+            get {
+                return this.PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PhoneNumber {
+            get {
+                return this.PhoneNumberField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PhoneNumberField, value) != true)) {
+                    this.PhoneNumberField = value;
+                    this.RaisePropertyChanged("PhoneNumber");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="TransferDto", Namespace="http://schemas.datacontract.org/2004/07/bank_service.Dto")]
+    [System.SerializableAttribute()]
+    public partial class TransferDto : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AccountNumberReceiverField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AccountNumberSenderField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AmountField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FullNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MessageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AccountNumberReceiver {
+            get {
+                return this.AccountNumberReceiverField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AccountNumberReceiverField, value) != true)) {
+                    this.AccountNumberReceiverField = value;
+                    this.RaisePropertyChanged("AccountNumberReceiver");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AccountNumberSender {
+            get {
+                return this.AccountNumberSenderField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AccountNumberSenderField, value) != true)) {
+                    this.AccountNumberSenderField = value;
+                    this.RaisePropertyChanged("AccountNumberSender");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Amount {
+            get {
+                return this.AmountField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AmountField, value) != true)) {
+                    this.AmountField = value;
+                    this.RaisePropertyChanged("Amount");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FullName {
+            get {
+                return this.FullNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FullNameField, value) != true)) {
+                    this.FullNameField = value;
+                    this.RaisePropertyChanged("FullName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Message {
+            get {
+                return this.MessageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
+                    this.MessageField = value;
+                    this.RaisePropertyChanged("Message");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Password {
+            get {
+                return this.PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="TransactionHistory", Namespace="http://schemas.datacontract.org/2004/07/bank_service.Entity")]
+    [System.SerializableAttribute()]
+    public partial class TransactionHistory : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double AmountField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime CreatedAtField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MessageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RecevierAccountNumberField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RecevierNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SenderAccountNumberField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SenderNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int StatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TransactionIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TransactionTypeField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Amount {
+            get {
+                return this.AmountField;
+            }
+            set {
+                if ((this.AmountField.Equals(value) != true)) {
+                    this.AmountField = value;
+                    this.RaisePropertyChanged("Amount");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime CreatedAt {
+            get {
+                return this.CreatedAtField;
+            }
+            set {
+                if ((this.CreatedAtField.Equals(value) != true)) {
+                    this.CreatedAtField = value;
+                    this.RaisePropertyChanged("CreatedAt");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Message {
+            get {
+                return this.MessageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
+                    this.MessageField = value;
+                    this.RaisePropertyChanged("Message");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string RecevierAccountNumber {
+            get {
+                return this.RecevierAccountNumberField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RecevierAccountNumberField, value) != true)) {
+                    this.RecevierAccountNumberField = value;
+                    this.RaisePropertyChanged("RecevierAccountNumber");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string RecevierName {
+            get {
+                return this.RecevierNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RecevierNameField, value) != true)) {
+                    this.RecevierNameField = value;
+                    this.RaisePropertyChanged("RecevierName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string SenderAccountNumber {
+            get {
+                return this.SenderAccountNumberField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SenderAccountNumberField, value) != true)) {
+                    this.SenderAccountNumberField = value;
+                    this.RaisePropertyChanged("SenderAccountNumber");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string SenderName {
+            get {
+                return this.SenderNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SenderNameField, value) != true)) {
+                    this.SenderNameField = value;
+                    this.RaisePropertyChanged("SenderName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Status {
+            get {
+                return this.StatusField;
+            }
+            set {
+                if ((this.StatusField.Equals(value) != true)) {
+                    this.StatusField = value;
+                    this.RaisePropertyChanged("Status");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TransactionId {
+            get {
+                return this.TransactionIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TransactionIdField, value) != true)) {
+                    this.TransactionIdField = value;
+                    this.RaisePropertyChanged("TransactionId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TransactionType {
+            get {
+                return this.TransactionTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TransactionTypeField, value) != true)) {
+                    this.TransactionTypeField = value;
+                    this.RaisePropertyChanged("TransactionType");
                 }
             }
         }
@@ -75,63 +642,119 @@ namespace bank_client.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
-    public interface IService1 {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IBank_Service")]
+    public interface IBank_Service {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
-        string GetData(int value);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBank_Service/GetInfoAccount", ReplyAction="http://tempuri.org/IBank_Service/GetInfoAccountResponse")]
+        bank_client.ServiceReference1.AccountDto GetInfoAccount(string AccountNumber, string PhoneNumber);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
-        System.Threading.Tasks.Task<string> GetDataAsync(int value);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBank_Service/GetInfoAccount", ReplyAction="http://tempuri.org/IBank_Service/GetInfoAccountResponse")]
+        System.Threading.Tasks.Task<bank_client.ServiceReference1.AccountDto> GetInfoAccountAsync(string AccountNumber, string PhoneNumber);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-        bank_client.ServiceReference1.CompositeType GetDataUsingDataContract(bank_client.ServiceReference1.CompositeType composite);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBank_Service/Register", ReplyAction="http://tempuri.org/IBank_Service/RegisterResponse")]
+        string Register(bank_client.ServiceReference1.AccountDto account);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-        System.Threading.Tasks.Task<bank_client.ServiceReference1.CompositeType> GetDataUsingDataContractAsync(bank_client.ServiceReference1.CompositeType composite);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBank_Service/Register", ReplyAction="http://tempuri.org/IBank_Service/RegisterResponse")]
+        System.Threading.Tasks.Task<string> RegisterAsync(bank_client.ServiceReference1.AccountDto account);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBank_Service/Login", ReplyAction="http://tempuri.org/IBank_Service/LoginResponse")]
+        bank_client.ServiceReference1.AccountDto Login(bank_client.ServiceReference1.LoginDto loginDto);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBank_Service/Login", ReplyAction="http://tempuri.org/IBank_Service/LoginResponse")]
+        System.Threading.Tasks.Task<bank_client.ServiceReference1.AccountDto> LoginAsync(bank_client.ServiceReference1.LoginDto loginDto);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBank_Service/Transfers", ReplyAction="http://tempuri.org/IBank_Service/TransfersResponse")]
+        bank_client.ServiceReference1.TransferDto Transfers(bank_client.ServiceReference1.TransferDto transfer, int otp);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBank_Service/Transfers", ReplyAction="http://tempuri.org/IBank_Service/TransfersResponse")]
+        System.Threading.Tasks.Task<bank_client.ServiceReference1.TransferDto> TransfersAsync(bank_client.ServiceReference1.TransferDto transfer, int otp);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBank_Service/SendOtp", ReplyAction="http://tempuri.org/IBank_Service/SendOtpResponse")]
+        int SendOtp(string PhoneNumber);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBank_Service/SendOtp", ReplyAction="http://tempuri.org/IBank_Service/SendOtpResponse")]
+        System.Threading.Tasks.Task<int> SendOtpAsync(string PhoneNumber);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBank_Service/transactionHistory", ReplyAction="http://tempuri.org/IBank_Service/transactionHistoryResponse")]
+        bank_client.ServiceReference1.TransactionHistory[] transactionHistory(string AccountNumber);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBank_Service/transactionHistory", ReplyAction="http://tempuri.org/IBank_Service/transactionHistoryResponse")]
+        System.Threading.Tasks.Task<bank_client.ServiceReference1.TransactionHistory[]> transactionHistoryAsync(string AccountNumber);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IService1Channel : bank_client.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
+    public interface IBank_ServiceChannel : bank_client.ServiceReference1.IBank_Service, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<bank_client.ServiceReference1.IService1>, bank_client.ServiceReference1.IService1 {
+    public partial class Bank_ServiceClient : System.ServiceModel.ClientBase<bank_client.ServiceReference1.IBank_Service>, bank_client.ServiceReference1.IBank_Service {
         
-        public Service1Client() {
+        public Bank_ServiceClient() {
         }
         
-        public Service1Client(string endpointConfigurationName) : 
+        public Bank_ServiceClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public Service1Client(string endpointConfigurationName, string remoteAddress) : 
+        public Bank_ServiceClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public Service1Client(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public Bank_ServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public Service1Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public Bank_ServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public string GetData(int value) {
-            return base.Channel.GetData(value);
+        public bank_client.ServiceReference1.AccountDto GetInfoAccount(string AccountNumber, string PhoneNumber) {
+            return base.Channel.GetInfoAccount(AccountNumber, PhoneNumber);
         }
         
-        public System.Threading.Tasks.Task<string> GetDataAsync(int value) {
-            return base.Channel.GetDataAsync(value);
+        public System.Threading.Tasks.Task<bank_client.ServiceReference1.AccountDto> GetInfoAccountAsync(string AccountNumber, string PhoneNumber) {
+            return base.Channel.GetInfoAccountAsync(AccountNumber, PhoneNumber);
         }
         
-        public bank_client.ServiceReference1.CompositeType GetDataUsingDataContract(bank_client.ServiceReference1.CompositeType composite) {
-            return base.Channel.GetDataUsingDataContract(composite);
+        public string Register(bank_client.ServiceReference1.AccountDto account) {
+            return base.Channel.Register(account);
         }
         
-        public System.Threading.Tasks.Task<bank_client.ServiceReference1.CompositeType> GetDataUsingDataContractAsync(bank_client.ServiceReference1.CompositeType composite) {
-            return base.Channel.GetDataUsingDataContractAsync(composite);
+        public System.Threading.Tasks.Task<string> RegisterAsync(bank_client.ServiceReference1.AccountDto account) {
+            return base.Channel.RegisterAsync(account);
+        }
+        
+        public bank_client.ServiceReference1.AccountDto Login(bank_client.ServiceReference1.LoginDto loginDto) {
+            return base.Channel.Login(loginDto);
+        }
+        
+        public System.Threading.Tasks.Task<bank_client.ServiceReference1.AccountDto> LoginAsync(bank_client.ServiceReference1.LoginDto loginDto) {
+            return base.Channel.LoginAsync(loginDto);
+        }
+        
+        public bank_client.ServiceReference1.TransferDto Transfers(bank_client.ServiceReference1.TransferDto transfer, int otp) {
+            return base.Channel.Transfers(transfer, otp);
+        }
+        
+        public System.Threading.Tasks.Task<bank_client.ServiceReference1.TransferDto> TransfersAsync(bank_client.ServiceReference1.TransferDto transfer, int otp) {
+            return base.Channel.TransfersAsync(transfer, otp);
+        }
+        
+        public int SendOtp(string PhoneNumber) {
+            return base.Channel.SendOtp(PhoneNumber);
+        }
+        
+        public System.Threading.Tasks.Task<int> SendOtpAsync(string PhoneNumber) {
+            return base.Channel.SendOtpAsync(PhoneNumber);
+        }
+        
+        public bank_client.ServiceReference1.TransactionHistory[] transactionHistory(string AccountNumber) {
+            return base.Channel.transactionHistory(AccountNumber);
+        }
+        
+        public System.Threading.Tasks.Task<bank_client.ServiceReference1.TransactionHistory[]> transactionHistoryAsync(string AccountNumber) {
+            return base.Channel.transactionHistoryAsync(AccountNumber);
         }
     }
 }

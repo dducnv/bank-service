@@ -9,7 +9,7 @@ namespace bank_service.Entity
     public class Account
     {
         [Key]
-        public int AccountNumber { get; set; }
+        public string AccountNumber { get; set; }
         public string FistName { get; set; }
         public string LastName { get; set; }
         public string Password { get; set; }
@@ -17,10 +17,10 @@ namespace bank_service.Entity
         public string Address { get; set; }
         public string Email { get; set; }
         public string IndetityNumber { get; set; }
+        public double Balance { get; set; }
         public DateTime Birthday { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
         public int Status { get; set; }
-        public virtual ICollection<Balance> Balances { get; set; }
     }
 }
